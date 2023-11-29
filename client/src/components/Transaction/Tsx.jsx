@@ -16,13 +16,13 @@ function Tsx() {
                 return (
                     <div key={_id} className="history-item">
                         <p style={{
-                            color: type === 'expense' ? 'red' : 'var(--color-green)'
+                            color: type === 'expense' ? 'red' : 'var(--color-green)', fontSize:"1.6rem"
                         }}>
                             {title}
                         </p>
 
                         <p style={{
-                            color: type === 'expense' ? 'red' : 'var(--color-green)'
+                            color: type === 'expense' ? 'red' : 'var(--color-green)', fontSize:"1.6rem"
                         }}>
                             {
                                 type === 'expense' ? `-${amount <= 0 ? 0 : amount}` : `+${amount <= 0 ? 0 : amount}`
@@ -49,6 +49,7 @@ const HistoryStyled = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        hover:
     }
 `;
 

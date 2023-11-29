@@ -17,7 +17,7 @@ function Expenses() {
         <ExpenseStyled>
             <InnerLayout>
                 <h1>Expenses</h1>
-                <h2 className="total-income">Total Expense: <span>{dollar}{totalExpenses()}</span></h2>
+                <h2 className="total-income">Total Expense: <span style={{color:"red"}}>{dollar}{totalExpenses()}</span></h2>
                 <div className="income-content">
                     <div className="form-container">
                         <ExpenseForm />
